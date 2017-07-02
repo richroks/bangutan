@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bangutan.com | Coming Soon!</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="move()">
+  <div class="mainContainer">
+    <div class="head">
+      <h1>UNDER CONSTRUCTION</h1>
+    </div>
+    <div class="sub">
+      <p>SITE PROGRESSION</p>
+    </div>
+    <div class="bar">
+      <div id="progBar" class="barColor" style="height:24px;width:0%"></div>
+    </div>
+    <p id="percent">0%</p>
+    <div class="social">
+      <a href="https://www.facebook.com/BangutanSquad/" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+      <a href="https://twitter.com/BangutanSquad" target="_blank "class="fa fa-twitter" aria-hidden="true"></a>
+      <a href="https://www.instagram.com/bangutansquad/" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+    </div>
+    <div class="copyright">
+      <p>© 2017 by Bangutan Squad<p>
+    </div>
+  </div>
+
+  <script>
+    function move() {
+      var elem = document.getElementById("progBar");
+      var width = 0;
+      var id = setInterval(frame, 40);
+
+      function frame() {
+        if (width >= 20) {
+          clearInterval(id);
+        } else {
+          width++;
+          elem.style.width = width + '%';
+          document.getElementById("percent").innerHTML = width * 1 + '%';
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>

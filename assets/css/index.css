@@ -1,0 +1,144 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background-image: url("../images/blurBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.head {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.head h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 8em;
+  width: 800px;
+  line-height: 130px;
+  letter-spacing: 10px;
+}
+
+@media only screen and (max-width:850px){
+
+  .head h1 {
+    font-size: 4em;
+    width: 500px;
+    line-height: 60px;
+  }
+
+  body, html {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width:480px){
+
+  .head h1 {
+    font-size: 3em;
+    line-height: 50px;
+  }
+}
+
+.sub {
+  position: relative;
+  top: -50px;
+  color: white;
+  text-align: center;
+  letter-spacing: 12px;
+}
+
+@media only screen and (max-width:850px) {
+  .sub {
+    top: -8px;
+    font-size: 14px;
+    letter-spacing: 6px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .sub {
+    top: 0px;
+  }
+}
+
+.bar {
+  background-color: white;
+  width: 500px;
+  position: relative;
+  top: -30px;
+}
+
+.barColor {
+  background-color: lightblue;
+}
+
+#percent {
+  color: white;
+  margin: 0;
+}
+
+@media only screen and (max-width:850px) {
+  .bar {
+    top: 0px;
+    font-size: 14px;
+    width: 300px;
+  }
+
+  #percent {
+    margin: 10px 0 0 0;
+  }
+}
+
+
+/* Style all font awesome icons */
+
+.fa {
+  padding: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 100px 40px 150px 40px;
+}
+
+.social {
+  font-size: 30px;
+}
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+  border-color: lightblue;
+  background-color: lightblue;
+  transition: background-color 0.3s ease;
+}
+
+.copyright {
+  color: white;
+}
+
+@media only screen and (max-width:850px) {
+  .social {
+    font-size: 20px;
+  }
+
+  .fa {
+    width: 20px;
+    margin: 100px 20px 150px 20px;
+  }
